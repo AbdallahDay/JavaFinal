@@ -60,7 +60,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error creating connection to database.");
             System.err.println(se.getMessage());
-            se.printStackTrace();
 
             return false;
         }
@@ -72,7 +71,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Unable to create records table.");
             System.err.println(se.getMessage() + " " + se.getErrorCode());
-            se.printStackTrace();
 
             return false;
         }
@@ -84,7 +82,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Unable to create consignors table.");
             System.err.println(se.getMessage() + " " + se.getErrorCode());
-            se.printStackTrace();
 
             return false;
         }
@@ -96,7 +93,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Unable to create sales table.");
             System.err.println(se.getMessage() + " " + se.getErrorCode());
-            se.printStackTrace();
 
             return false;
         }
@@ -218,7 +214,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to add record");
             System.out.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
 
             return false;
         }
@@ -249,7 +244,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to add consignor");
             System.out.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
 
             return false;
         }
@@ -278,7 +272,6 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to move record to sales table");
             System.out.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
 
             return false;
         }
@@ -303,7 +296,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to delete record.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
@@ -329,7 +322,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to delete consignor.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
@@ -363,7 +356,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to update record data.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
@@ -397,7 +390,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to update consignor data.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
@@ -428,7 +421,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to find record.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
@@ -455,7 +448,7 @@ public class InventoryModel {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to find consignor.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
-            se.printStackTrace();
+
             return false;
         }
 
