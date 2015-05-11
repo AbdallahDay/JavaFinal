@@ -4,6 +4,7 @@ package com.abdallah;
  * Created by DayDay on 5/1/2015.
  */
 public class Consignor {
+
     private int consignorID;
     private String consignorName;
     private String phone;
@@ -13,18 +14,18 @@ public class Consignor {
 
     private static final int NO_ID = -1;     //Value to represent unknown ID
 
-    public Consignor(String consignorName, String phone, String email, double amountOwed, double amountPaid) {
+    public Consignor(String consignorName, String phone, String email, double amountOwed, double totalPaid) {
         this.consignorName = consignorName;
         this.phone = phone;
         this.email = email;
         this.amountOwed = amountOwed;
-        this.totalPaid = amountPaid;
+        this.totalPaid = totalPaid;
 
         this.consignorID = NO_ID;
     }
 
-    public Consignor(int consignorID, String consignorName, String phone, String email, double amountOwed, double amountPaid) {
-        this(consignorName, phone, email, amountOwed, amountPaid);
+    public Consignor(int consignorID, String consignorName, String phone, String email, double amountOwed, double totalPaid) {
+        this(consignorName, phone, email, amountOwed, totalPaid);
         this.consignorID = consignorID;
     }
 

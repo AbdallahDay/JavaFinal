@@ -6,6 +6,7 @@ import java.sql.Date;
  * Created by DayDay on 5/1/2015.
  */
 public class Record {
+
     private int recordID;
     private String title;
     private String artist;
