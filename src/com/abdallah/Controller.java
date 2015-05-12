@@ -333,7 +333,7 @@ public class Controller {
         }
 
         if (errors) {
-            return "Error sending to some recipients";
+            return "Error sending notification emails to some recipients";
         } else {
             return null;
         }
