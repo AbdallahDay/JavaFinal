@@ -919,7 +919,7 @@ public class DatabaseModel {
 
     /**
      *
-     * @param numberOfDays: number of days before record needs to go into bargain basement
+     * @param numberOfDays: number of days a record can stay in store before it needs to go into bargain basement
      *
      */
     public ArrayList<Record> getRecordsForBargain(int numberOfDays) {
@@ -928,10 +928,20 @@ public class DatabaseModel {
 
         //get record data from records table where the age of the record exceeds a given number of days
         String getRecords =
-                "SELECT *," +
-                        " CAST(DATEDIFF(DD, dateConsigned, GETDATE()) AS INT) AS daysOld" +
+                "SELECT " +
+                        RECORD_ID + ", " +
+                        TITLE + ", " +
+                        ARTIST + ", " +
+                        CONSIGNOR_ID + ", " +
+                        DATE_CONSIGNED + ", " +
+                        PRICE +
+                        ", CAST(DATEDIFF(day, dateConsigned, GETDATE()) AS INT) AS daysOld" +
                         " FROM " + RECORDS_TABLE +
                         " WHERE daysOld >= " + numberOfDays;
+        //TODO: getting exception: 30000 Column 'DAY' is either not in any table in the FROM list
+        // or appears within a join specification and is outside the scope of the join specification
+        // or appears in a HAVING clause and is not in the GROUP BY list.
+        // If this is a CREATE or ALTER TABLE  statement then 'DAY' is not a column in the target table.
         try {
             rs = statement.executeQuery(getRecords);
         } catch (SQLException se) {
@@ -982,8 +992,14 @@ public class DatabaseModel {
 
         //get record data from available records view where the age of the record exceeds a given number of days
         String getRecords =
-                "SELECT *," +
-                        " CAST(DATEDIFF(DD, dateConsigned, GETDATE()) AS INT) AS daysOld" +
+                "SELECT " +
+                        RECORD_ID + ", " +
+                        TITLE + ", " +
+                        ARTIST + ", " +
+                        CONSIGNOR_ID + ", " +
+                        DATE_CONSIGNED + ", " +
+                        PRICE +
+                        ", CAST(DATEDIFF(day, dateConsigned, GETDATE()) AS INT) AS daysOld" +
                         " FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE daysOld >= " + numberOfDays;
         try {

@@ -31,6 +31,7 @@ public class View {
 
     public View(Controller controller) {
         myController = controller;
+        controller.getOldRecords();
     }
 
     public void launchUI() {
@@ -51,8 +52,4 @@ public class View {
     }
 
     //TODO: call db cleanup before closing
-
-    //TODO: method for paying a consignor
-
-    //TODO: method for selling a record
 }
