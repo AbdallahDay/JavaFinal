@@ -155,8 +155,11 @@ public class DatabaseModel {
         allStatements.add(statement);
     }
 
+    /**
+     * taken from laptop inventory project (project author: Clara James)
+     * url: https://github.com/minneapolis-edu/laptop
+     */
     public void cleanup() {
-        //taken from laptop inventory project (Author: Clara James)
 
         try {
             if (rs != null) {
@@ -449,7 +452,7 @@ public class DatabaseModel {
 
     public boolean addToSales(int recordID, Date dateSold) {
         //make sure record exists
-        if (!recordExists(recordID)) return false;
+        if (getRecordData(recordID) == null) return false;
 
         //SQL query for moving a record from records table to sales table
         String addSaleSQLps =
@@ -461,7 +464,7 @@ public class DatabaseModel {
                         DATE_CONSIGNED + ", " +
                         PRICE + ", " +
                         DATE_SOLD +
-                        ") VALUES ((SELECT * FROM " + RECORDS_TABLE +
+                        ") VALUES ((SELECT * FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE " + RECORD_ID + "=?), ?)";
 
         try {
@@ -487,7 +490,7 @@ public class DatabaseModel {
 
     public boolean addToBargainBasement(int recordID) {
         //make sure record exists
-        if (!recordExists(recordID)) return false;
+        if (getRecordData(recordID) == null) return false;
 
         //SQL query for moving a record from records table to bargain basement table
         String addToBargainBasementSQLps =
@@ -530,11 +533,11 @@ public class DatabaseModel {
 
     public boolean deleteRecord(int recordID) {
         //make sure record exists
-        if (!recordExists(recordID)) return false;
+        if (getRecordData(recordID) == null) return false;
 
         // SQL query for deleting record from DB
         String deleteRecordSQLps =
-                "DELETE FROM " + RECORDS_TABLE +
+                "DELETE FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE " + RECORD_ID + "=?";
 
         try {
@@ -557,7 +560,7 @@ public class DatabaseModel {
 
     public boolean deleteConsignor(int consignorID) {
         //make sure consignor exists
-        if (!consignorExists(consignorID)) return false;
+        if (getConsignorData(consignorID) == null) return false;
 
         //do not allow delete if consignor still has records in store
         if (consignorHasRecords(consignorID)) return false;
@@ -590,7 +593,7 @@ public class DatabaseModel {
         int recordID = newData.getRecordID();
 
         //make sure record exists
-        if (!recordExists(recordID)) return false;
+        if (getRecordData(recordID) == null) return false;
 
         // SQL query for updating record
         String updateRecordSQLps =
@@ -631,7 +634,7 @@ public class DatabaseModel {
         int consignorID = newData.getConsignorID();
 
         //make sure consignor exists
-        if (!consignorExists(consignorID)) return false;
+        if (getConsignorData(consignorID) == null) return false;
 
         // SQL query for updating consignor
         String updateConsignorSQLps =
@@ -867,7 +870,7 @@ public class DatabaseModel {
 
     public ArrayList<Record> getRecordsByConsignor(int consignorID) {
         //make sure consignor exists
-        if (!consignorExists(consignorID)) return null;
+        if (getConsignorData(consignorID) == null) return null;
 
         ArrayList<Record> records = new ArrayList<Record>();
 
@@ -914,68 +917,184 @@ public class DatabaseModel {
         return records;
     }
 
-    private boolean recordExists(int recordID) {
+    /**
+     *
+     * @param numberOfDays: number of days before record needs to go into bargain basement
+     *
+     */
+    public ArrayList<Record> getRecordsForBargain(int numberOfDays) {
+
+        ArrayList<Record> records = new ArrayList<Record>();
+
+        //get record data from records table where the age of the record exceeds a given number of days
+        String getRecords =
+                "SELECT *," +
+                        " CAST(DATEDIFF(DD, dateConsigned, GETDATE()) AS INT) AS daysOld" +
+                        " FROM " + RECORDS_TABLE +
+                        " WHERE daysOld >= " + numberOfDays;
+        try {
+            rs = statement.executeQuery(getRecords);
+        } catch (SQLException se) {
+            //TODO: display error message
+            System.err.println("Error fetching records from records table");
+            System.out.println(se.getErrorCode() + " " + se.getMessage());
+
+            return null;
+        }
+
+        try {
+            while (rs.next()) {
+                int recordID = rs.getInt(RECORD_ID);
+                String title = rs.getString(TITLE);
+                String artist = rs.getString(ARTIST);
+                int conID = rs.getInt(CONSIGNOR_ID);
+                Date dateConsigned = rs.getDate(DATE_CONSIGNED);
+                double price = rs.getDouble(PRICE);
+
+                Record record = new Record(
+                        recordID,
+                        title,
+                        artist,
+                        conID,
+                        dateConsigned,
+                        price);
+
+                records.add(record);
+            }
+        } catch (SQLException se) {
+            System.err.println("Error reading from result set after fetching record data");
+            System.out.println(se.getErrorCode() + " " + se.getMessage());
+
+            return null;
+        }
+
+        return records;
+    }
+
+    /**
+     *
+     * @param numberOfDays: number of days before record needs to donated to charity
+     *
+     */
+    public ArrayList<Record> getRecordsForDonation(int numberOfDays) {
+
+        ArrayList<Record> records = new ArrayList<Record>();
+
+        //get record data from available records view where the age of the record exceeds a given number of days
+        String getRecords =
+                "SELECT *," +
+                        " CAST(DATEDIFF(DD, dateConsigned, GETDATE()) AS INT) AS daysOld" +
+                        " FROM " + AVAILABLE_RECORDS_VIEW +
+                        " WHERE daysOld >= " + numberOfDays;
+        try {
+            rs = statement.executeQuery(getRecords);
+        } catch (SQLException se) {
+            //TODO: display error message
+            System.err.println("Error fetching records from available records view");
+            System.out.println(se.getErrorCode() + " " + se.getMessage());
+
+            return null;
+        }
+
+        try {
+            while (rs.next()) {
+                int recordID = rs.getInt(RECORD_ID);
+                String title = rs.getString(TITLE);
+                String artist = rs.getString(ARTIST);
+                int conID = rs.getInt(CONSIGNOR_ID);
+                Date dateConsigned = rs.getDate(DATE_CONSIGNED);
+                double price = rs.getDouble(PRICE);
+
+                Record record = new Record(
+                        recordID,
+                        title,
+                        artist,
+                        conID,
+                        dateConsigned,
+                        price);
+
+                records.add(record);
+            }
+        } catch (SQLException se) {
+            System.err.println("Error reading from result set after fetching record data");
+            System.out.println(se.getErrorCode() + " " + se.getMessage());
+
+            return null;
+        }
+
+        return records;
+    }
+
+    public Record getRecordData(int recordID) {
         // SQL query for finding record in DB
         String findRecordSQLps =
                 "SELECT * FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE " + RECORD_ID + "=?";
 
         try {
+            //get data
             psFindRecords = conn.prepareStatement(findRecordSQLps);
             allStatements.add(psFindRecords);
             psFindRecords.setInt(1, recordID);
 
             rs = psFindRecords.executeQuery();
-            if (!rs.next()) {
-                //TODO: display error message
-                System.out.println("Could not find record with ID #" + recordID);
-                return false;
-            }
+
+            int id = rs.getInt(RECORD_ID);
+            String title = rs.getString(TITLE);
+            String artist = rs.getString(ARTIST);
+            int consignorID = rs.getInt(CONSIGNOR_ID);
+            Date dateConsigned = rs.getDate(DATE_CONSIGNED);
+            double price = rs.getDouble(PRICE);
+
+            return new Record(id, title, artist, consignorID, dateConsigned, price);
+
         } catch (SQLException se) {
             //TODO: display error message
-            System.err.println("Error preparing statement or executing prepared statement to find record.");
+            System.err.println("Error preparing statement or executing prepared statement to fetch record.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
 
-            return false;
+            //null means error occurred
+            return null;
         }
-
-        //record exists
-        return true;
     }
 
-    private boolean consignorExists(int consignorID) {
+    public Consignor getConsignorData(int consignorID) {
         // SQL query for finding consignor in DB
         String findConsignorSQLps =
                 "SELECT * FROM " + CONSIGNORS_TABLE +
                         " WHERE " + CONSIGNOR_ID + "=?";
 
         try {
+            //get data
             psFindConsignors = conn.prepareStatement(findConsignorSQLps);
             allStatements.add(psFindConsignors);
             psFindConsignors.setInt(1, consignorID);
 
             rs = psFindConsignors.executeQuery();
-            if (!rs.next()) {
-                //TODO: display error message
-                System.out.println("Could not find consignor with ID #" + consignorID);
-                return false;
-            }
+
+            int id = rs.getInt(CONSIGNOR_ID);
+            String name = rs.getString(CONSIGNOR_NAME);
+            String phone = rs.getString(PHONE);
+            String email = rs.getString(EMAIL);
+            double amountOwed = rs.getDouble(AMOUNT_OWED);
+            double totalPaid = rs.getDouble(TOTAL_PAID);
+
+            return new Consignor(id, name, phone, email, amountOwed, totalPaid);
+
         } catch (SQLException se) {
             //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to find consignor.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
 
-            return false;
+            //null means error occurred
+            return null;
         }
-
-        //consignor exists
-        return true;
     }
 
     private boolean consignorHasRecords(int consignorID) {
         //SQL query for finding records by consignorID
         String findRecordsSQLps =
-                "SELECT * FROM " + RECORDS_TABLE +
+                "SELECT * FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE " + CONSIGNOR_ID + "=?";
 
         String findBargainRecordsSQLps =

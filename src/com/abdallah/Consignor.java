@@ -37,21 +37,46 @@ public class Consignor {
         return this.consignorName;
     }
 
+    public void setConsignorName(String name) {
+        this.consignorName = name;
+    }
+
+
     public String getPhone() {
         return phone;
     }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
 
     public String getEmail() {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
     public double getAmountOwed() {
         return amountOwed;
     }
 
+    public void setAmountOwed(double amountOwed) {
+        this.amountOwed = amountOwed;
+    }
+
+
     public double getTotalPaid() {
         return totalPaid;
     }
+
+    public void setTotalPaid(double totalPaid) {
+        this.totalPaid = totalPaid;
+    }
+
 
     @Override
     public String toString() {
@@ -61,6 +86,6 @@ public class Consignor {
                 + ", Phone: " + this.phone
                 + ", Email: " + this.email
                 + ", Amount Owed: " + this.amountOwed
-                + ", Amount Paid: " + this.totalPaid;
+                + ", Total Paid: " + this.totalPaid;
     }
 }

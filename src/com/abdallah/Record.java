@@ -39,21 +39,38 @@ public class Record {
         return this.title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+
     public String getArtist() {
         return this.artist;
     }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
 
     public int getConsignorID() {
         return this.consignorID;
     }
 
+
     public Date getDateConsigned() {
         return this.dateConsigned;
     }
 
-    public double getPrice() {
-        return this.price;
-    }
 
     public String toString() {
         String idString = (this.recordID == NO_ID) ? "<No ID assigned>" : Integer.toString(this.recordID);
