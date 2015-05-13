@@ -103,7 +103,7 @@ public class Controller {
             return null;
         } else {
             return "Unable to delete consignor from database." +
-                    " Make sure consignor does not have records in store before deleting";
+                    "\nMake sure consignor does not have records in store before deleting";
         }
     }
 

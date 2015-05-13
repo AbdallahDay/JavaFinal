@@ -935,9 +935,9 @@ public class DatabaseModel {
                         CONSIGNOR_ID + ", " +
                         DATE_CONSIGNED + ", " +
                         PRICE +
-                        ", CAST(DATEDIFF(day, dateConsigned, GETDATE()) AS INT) AS daysOld" +
                         " FROM " + RECORDS_TABLE +
-                        " WHERE daysOld >= " + numberOfDays;
+                        " WHERE {fn TIMESTAMPDIFF(SQL_TSI_DAY, " +
+                        DATE_CONSIGNED + ", CURRENT_DATE)} <= " + numberOfDays;
         //TODO: getting exception: 30000 Column 'DAY' is either not in any table in the FROM list
         // or appears within a join specification and is outside the scope of the join specification
         // or appears in a HAVING clause and is not in the GROUP BY list.
@@ -999,9 +999,9 @@ public class DatabaseModel {
                         CONSIGNOR_ID + ", " +
                         DATE_CONSIGNED + ", " +
                         PRICE +
-                        ", CAST(DATEDIFF(day, dateConsigned, GETDATE()) AS INT) AS daysOld" +
                         " FROM " + AVAILABLE_RECORDS_VIEW +
-                        " WHERE daysOld >= " + numberOfDays;
+                        " WHERE {fn TIMESTAMPDIFF(SQL_TSI_DAY, " +
+                        DATE_CONSIGNED + ", CURRENT_DATE)} <= " + numberOfDays;
         try {
             rs = statement.executeQuery(getRecords);
         } catch (SQLException se) {
