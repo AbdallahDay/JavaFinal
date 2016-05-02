@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04ac3be2-9cef-4a37-be6f-49dfbec3a9a9" name="Default" comment="" />
+    <ignored path="Record Store.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="sender.txt" />
+    <ignored path="manager.txt" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Derby - Record Store" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Record Store" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/Validator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="22.224182">
+              <caret line="523" column="44" selection-start-line="523" selection-start-column="44" selection-end-line="523" selection-end-column="44" />
+              <folding>
+                <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+                <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+                <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+                <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+                <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+                <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+                <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+                <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+                <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+                <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+                <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+                <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+                <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+                <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+                <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+                <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+                <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+                <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+                <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+                <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+                <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+                <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+                <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+                <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+                <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+                <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+                <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+                <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+                <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+                <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+                <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+                <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+                <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="195" column="19" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="19" />
+              <folding>
+                <element signature="e#5137#5138#0" expanded="false" />
+                <element signature="e#5195#5196#0" expanded="false" />
+                <element signature="e#5249#5250#0" expanded="false" />
+                <element signature="e#5288#5289#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddRecordDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/AddRecordDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1051#1052#0" expanded="false" />
+                <element signature="e#1089#1090#0" expanded="false" />
+                <element signature="e#1221#1222#0" expanded="false" />
+                <element signature="e#1263#1264#0" expanded="false" />
+                <element signature="e#1476#1477#0" expanded="false" />
+                <element signature="e#1518#1519#0" expanded="false" />
+                <element signature="e#1683#1684#0" expanded="false" />
+                <element signature="e#1725#1726#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayConsignorDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/PayConsignorDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#858#859#0" expanded="false" />
+                <element signature="e#896#897#0" expanded="false" />
+                <element signature="e#1028#1029#0" expanded="false" />
+                <element signature="e#1070#1071#0" expanded="false" />
+                <element signature="e#1282#1283#0" expanded="false" />
+                <element signature="e#1324#1325#0" expanded="false" />
+                <element signature="e#1489#1490#0" expanded="false" />
+                <element signature="e#1531#1532#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainForm.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/mainForm.form">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#980#981#0" expanded="false" />
+                <element signature="e#1013#1014#0" expanded="false" />
+                <element signature="e#1055#1056#0" expanded="false" />
+                <element signature="e#1089#1090#0" expanded="false" />
+                <element signature="e#1123#1124#0" expanded="false" />
+                <element signature="e#1157#1158#0" expanded="false" />
+                <element signature="e#1201#1202#0" expanded="false" />
+                <element signature="e#1237#1238#0" expanded="false" />
+                <element signature="e#1270#1271#0" expanded="false" />
+                <element signature="e#1303#1304#0" expanded="false" />
+                <element signature="e#1345#1346#0" expanded="false" />
+                <element signature="e#1379#1380#0" expanded="false" />
+                <element signature="e#1415#1416#0" expanded="false" />
+                <element signature="e#1454#1455#0" expanded="false" />
+                <element signature="e#1493#1494#0" expanded="false" />
+                <element signature="e#1534#1535#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Consignor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="76" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+              <folding>
+                <element signature="e#944#945#0" expanded="false" />
+                <element signature="e#983#984#0" expanded="false" />
+                <element signature="e#1023#1024#0" expanded="false" />
+                <element signature="e#1064#1065#0" expanded="false" />
+                <element signature="e#1113#1114#0" expanded="false" />
+                <element signature="e#1154#1155#0" expanded="false" />
+                <element signature="e#1187#1188#0" expanded="false" />
+                <element signature="e#1215#1216#0" expanded="false" />
+                <element signature="e#1257#1258#0" expanded="false" />
+                <element signature="e#1291#1292#0" expanded="false" />
+                <element signature="e#1324#1325#0" expanded="false" />
+                <element signature="e#1352#1353#0" expanded="false" />
+                <element signature="e#1394#1395#0" expanded="false" />
+                <element signature="e#1428#1429#0" expanded="false" />
+                <element signature="e#1466#1467#0" expanded="false" />
+                <element signature="e#1499#1500#0" expanded="false" />
+                <element signature="e#1551#1552#0" expanded="false" />
+                <element signature="e#1595#1596#0" expanded="false" />
+                <element signature="e#1632#1633#0" expanded="false" />
+                <element signature="e#1664#1665#0" expanded="false" />
+                <element signature="e#1714#1715#0" expanded="false" />
+                <element signature="e#1756#1757#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/abdallah/InventoryController.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Consigner.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/InventoryModel.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/SoldRecord.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Emailer.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/SetBargainPriceDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/AddRecordDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/editRecordDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/AddConsignorDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/editRecordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/SetBargainPriceDialog.java" />
+        <option value="$PROJECT_DIR$/bargainPrice.txt" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/DeleteRecordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/EditConsignorDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/DeleteConsignorDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/PayConsignorDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Consignor.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Record.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/AddConsignorDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/EditConsignorDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/mainForm.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/EditBargainRecordDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/EditRecordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/EditBargainRecordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Validator.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/PayConsignorDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/AddRecordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/abdallah/View.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Record Store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Record Store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Record Store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Record Store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Record Store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abdallah" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1857542" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="gitignore&#9;null&#9;null" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="222" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="173" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DayDay\Google Drive\School\Spring '15\Java\Final Project\Record Store" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.abdallah.Controller" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Record Store" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04ac3be2-9cef-4a37-be6f-49dfbec3a9a9" name="Default" comment="" />
+      <created>1430442050402</created>
+      <option name="number" value="Default" />
+      <updated>1430442050402</updated>
+      <workItem from="1430442065260" duration="40069000" />
+      <workItem from="1430865507924" duration="1027000" />
+      <workItem from="1431225548146" duration="752000" />
+      <workItem from="1431301100193" duration="39594000" />
+      <workItem from="1431407845113" duration="528000" />
+      <workItem from="1431408432431" duration="55353000" />
+      <workItem from="1431514152143" duration="914000" />
+      <workItem from="1431515370666" duration="18000" />
+      <workItem from="1462207983411" duration="710000" />
+    </task>
+    <task id="LOCAL-00001" summary="removed all printStackTrace() calls">
+      <created>1430859772672</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1430859772672</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added new methods and a gui form">
+      <created>1431332443973</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1431332443973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented some of the emailing features">
+      <created>1431429072910</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1431429072910</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented some of the emailing features">
+      <created>1431429231025</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1431429231025</updated>
+    </task>
+    <task id="LOCAL-00005" summary="some error need to be fixed">
+      <created>1431463460423</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1431463460423</updated>
+    </task>
+    <task id="LOCAL-00006" summary="almost there">
+      <created>1431492849930</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1431492849930</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final commit">
+      <created>1462208646430</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1462208646430</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="138965000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1830161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2688679" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed all printStackTrace() calls" />
+    <MESSAGE value="added new methods and a gui form" />
+    <MESSAGE value="implemented some of the emailing features" />
+    <MESSAGE value="some error need to be fixed" />
+    <MESSAGE value="almost there" />
+    <MESSAGE value="final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java</url>
+          <line>470</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java</url>
+          <line>498</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/mainForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/SoldRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="980" column="39" selection-start-line="980" selection-start-column="39" selection-end-line="980" selection-end-column="39" />
+          <folding>
+            <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+            <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+            <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+            <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+            <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+            <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+            <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+            <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+            <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+            <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+            <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="225" column="85" selection-start-line="225" selection-start-column="85" selection-end-line="225" selection-end-column="85" />
+          <folding>
+            <element signature="e#5137#5138#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5249#5250#0" expanded="false" />
+            <element signature="e#5288#5289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Emailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/mainForm.form">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/SoldRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#5137#5138#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5249#5250#0" expanded="false" />
+            <element signature="e#5288#5289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+            <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+            <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+            <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+            <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+            <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+            <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+            <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+            <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+            <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+            <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#5137#5138#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5249#5250#0" expanded="false" />
+            <element signature="e#5288#5289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+            <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+            <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+            <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+            <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+            <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+            <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+            <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+            <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+            <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+            <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#5137#5138#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5249#5250#0" expanded="false" />
+            <element signature="e#5288#5289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+            <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+            <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+            <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+            <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+            <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+            <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+            <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+            <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+            <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+            <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/12845c30-aec9-4c5d-9fc9-174f07b23182/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/SoldRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Emailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="134" column="58" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/SetBargainPriceDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/AddRecordDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditRecordDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/AddConsignorDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sender.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bargainPrice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditConsignorDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/PayConsignorDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Consignor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="76" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/AddConsignorDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditConsignorDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="62" selection-start-line="88" selection-start-column="62" selection-end-line="88" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/SetBargainPriceDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01758794">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1237#1238#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1379#1380#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#1493#1494#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditBargainRecordDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditRecordDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/EditBargainRecordDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="e#724#851#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#894#1025#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1151#1279#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1355#1486#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/PayConsignorDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#858#859#0" expanded="false" />
+            <element signature="e#896#897#0" expanded="false" />
+            <element signature="e#1028#1029#0" expanded="false" />
+            <element signature="e#1070#1071#0" expanded="false" />
+            <element signature="e#1282#1283#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1489#1490#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="19" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="19" />
+          <folding>
+            <element signature="e#5137#5138#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5249#5250#0" expanded="false" />
+            <element signature="e#5288#5289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/AddRecordDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1263#1264#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1518#1519#0" expanded="false" />
+            <element signature="e#1683#1684#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/mainForm.form">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdallah/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="22.224182">
+          <caret line="523" column="44" selection-start-line="523" selection-start-column="44" selection-end-line="523" selection-end-column="44" />
+          <folding>
+            <marker date="1431511772504" expanded="true" signature="6556:6931" placeholder="CREATE TABLE..Records..." />
+            <marker date="1431511772504" expanded="true" signature="6968:6979" placeholder="DROP TABLE R..." />
+            <marker date="1431511772504" expanded="true" signature="8139:8533" placeholder="CREATE TABLE..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="8570:8581" placeholder="DROP TABLE C..." />
+            <marker date="1431511772504" expanded="true" signature="9747:10127" placeholder="CREATE TABLE..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="10164:10175" placeholder="DROP TABLE S..." />
+            <marker date="1431511772504" expanded="true" signature="11326:11665" placeholder="CREATE TABLE..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="11702:11713" placeholder="DROP TABLE B..." />
+            <marker date="1431511772504" expanded="true" signature="13038:13251" placeholder="CREATE VIEW AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="13137:13151" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="13237:13251" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="13309:13319" placeholder="DROP VIEW Av..." />
+            <marker date="1431511772504" expanded="true" signature="14516:14809" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="15828:16127" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="17337:17720" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="18976:19320" placeholder="INSERT INTO ..." />
+            <marker date="1431511772504" expanded="true" signature="20663:20742" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="21746:21835" placeholder="DELETE FROM ..." />
+            <marker date="1431511772504" expanded="true" signature="22819:23119" placeholder="UPDATE Avail..." />
+            <marker date="1431511772504" expanded="true" signature="24360:24673" placeholder="UPDATE Consi..." />
+            <marker date="1431511772504" expanded="true" signature="25813:25889" placeholder="UPDATE Barga..." />
+            <marker date="1431511772504" expanded="true" signature="26464:26478" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="27941:27955" placeholder="SELECT * FRO..BargainBasement..." />
+            <marker date="1431511772504" expanded="true" signature="29426:29440" placeholder="SELECT * FRO..Sales..." />
+            <marker date="1431511772504" expanded="true" signature="31005:31019" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="32742:32838" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34573" placeholder="SELECT *, (S..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34580" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34632" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34663" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34725" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34728" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="34566:34729" placeholder="SELECT recor..Records..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36774" placeholder="SELECT recor..." />
+            <marker date="1431511772504" expanded="true" signature="36766:36938" placeholder="SELECT *, CA..Records..." />
+            <marker date="1431511772504" expanded="true" signature="38385:38479" placeholder="SELECT * FRO..AvailableRecords..." />
+            <marker date="1431511772504" expanded="true" signature="39761:39852" placeholder="SELECT * FRO..Consignors..." />
+            <marker date="1431511772504" expanded="true" signature="41165:41262" placeholder="SELECT * FRO..Records..." />
+            <marker date="1431511772504" expanded="true" signature="41324:41417" placeholder="SELECT * FRO..BargainBasement..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Record Store</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>com.sun.mail:javax.mail:1.5.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
