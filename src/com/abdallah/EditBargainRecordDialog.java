@@ -3,17 +3,23 @@ package com.abdallah;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class SetBargainPriceDialog extends JDialog {
+public class EditBargainRecordDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField priceTextField;
+    private JTextField titleTextField;
+    private JTextField artistTextField;
 
     private View myView;
+    private Record myRecord;
 
-    public SetBargainPriceDialog(View view) {
+    public EditBargainRecordDialog(Record record, View view) {
 
         myView = view;
+        myRecord = record;
+
+        titleTextField.setText(record.getTitle());
+        artistTextField.setText(record.getArtist());
 
         setContentPane(contentPane);
         setModal(true);
@@ -49,7 +55,13 @@ public class SetBargainPriceDialog extends JDialog {
 
     private void onOK() {
         if (isValidInput()) {
-            Controller.setBargainPrice(Double.parseDouble(priceTextField.getText()));
+            String title = titleTextField.getText();
+            String artist = artistTextField.getText();
+
+            myRecord.setTitle(title);
+            myRecord.setArtist(artist);
+
+            myView.editRecord(DatabaseModel.BARGAIN_BSMT_TABLE, myRecord);
 
             myView.updateUI();
 
@@ -64,7 +76,7 @@ public class SetBargainPriceDialog extends JDialog {
 
     boolean isValidInput() {
         return
-                Validator.isPresent(priceTextField, "Price") &&
-                Validator.isNumeric(priceTextField, "Price");
+                Validator.isPresent(titleTextField, "Title") &&
+                Validator.isPresent(artistTextField, "Artist");
     }
 }

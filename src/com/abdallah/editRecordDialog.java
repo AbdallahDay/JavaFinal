@@ -3,7 +3,7 @@ package com.abdallah;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class editRecordDialog extends JDialog {
+public class EditRecordDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -11,10 +11,10 @@ public class editRecordDialog extends JDialog {
     private JTextField artistTextField;
     private JTextField priceTextField;
 
-    View myView;
-    Record myRecord;
+    private View myView;
+    private Record myRecord;
 
-    public editRecordDialog(Record record, View view) {
+    public EditRecordDialog(Record record, View view) {
 
         myView = view;
         myRecord = record;
@@ -65,7 +65,9 @@ public class editRecordDialog extends JDialog {
             myRecord.setArtist(artist);
             myRecord.setPrice(price);
 
-            myView.editRecord(myRecord);
+            myView.editRecord(DatabaseModel.RECORDS_TABLE, myRecord);
+
+            myView.updateUI();
 
             dispose();
         }

@@ -20,11 +20,6 @@ public class AddRecordDialog extends JDialog {
 
         myView = view;
 
-        if (allConsignors == null || allConsignors.isEmpty()) {
-            View.messageBox("Could not load a list of consignors, adding a record requires a consignor.", "Error");
-            dispose();
-        }
-
         DefaultComboBoxModel<Consignor> consignorListModel = new DefaultComboBoxModel<Consignor>();
 
         for (Consignor consignor : allConsignors) {
@@ -51,6 +46,7 @@ public class AddRecordDialog extends JDialog {
 
 // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 onCancel();
@@ -79,6 +75,8 @@ public class AddRecordDialog extends JDialog {
             Record record = new Record(title, artist, consignorID, today, price);
 
             myView.addRecord(record);
+
+            myView.updateUI();
 
             dispose();
         }

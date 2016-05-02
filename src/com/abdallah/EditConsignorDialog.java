@@ -3,17 +3,25 @@ package com.abdallah;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class SetBargainPriceDialog extends JDialog {
+public class EditConsignorDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField priceTextField;
+    private JTextField nameTextField;
+    private JTextField phoneTextField;
+    private JTextField emailTextField;
 
     private View myView;
+    private Consignor myConsignor;
 
-    public SetBargainPriceDialog(View view) {
+    public EditConsignorDialog(Consignor consignor, View view) {
 
+        myConsignor = consignor;
         myView = view;
+
+        nameTextField.setText(myConsignor.getConsignorName());
+        phoneTextField.setText(myConsignor.getPhone());
+        emailTextField.setText(myConsignor.getEmail());
 
         setContentPane(contentPane);
         setModal(true);
@@ -49,7 +57,16 @@ public class SetBargainPriceDialog extends JDialog {
 
     private void onOK() {
         if (isValidInput()) {
-            Controller.setBargainPrice(Double.parseDouble(priceTextField.getText()));
+
+            String name = nameTextField.getText();
+            String phone = phoneTextField.getText();
+            String email = emailTextField.getText();
+
+            myConsignor.setConsignorName(name);
+            myConsignor.setPhone(phone);
+            myConsignor.setEmail(email);
+
+            myView.editConsignor(myConsignor);
 
             myView.updateUI();
 
@@ -64,7 +81,11 @@ public class SetBargainPriceDialog extends JDialog {
 
     boolean isValidInput() {
         return
-                Validator.isPresent(priceTextField, "Price") &&
-                Validator.isNumeric(priceTextField, "Price");
+                Validator.isPresent(nameTextField, "Name") &&
+                Validator.isPresent(phoneTextField, "Phone") &&
+                Validator.isInteger(phoneTextField, "Phone") &&
+                Validator.isCorrectLength(phoneTextField, 10, "Phone") &&
+                Validator.isPresent(emailTextField, "Email") &&
+                Validator.isValidEmailAddress(emailTextField);
     }
 }

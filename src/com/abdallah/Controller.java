@@ -1,14 +1,17 @@
 package com.abdallah;
 
+import java.io.*;
 import java.sql.Date;
 import java.util.ArrayList;
 
 public class Controller {
 
-    private static double bargainPrice = 1.00;              //price of all records in the bargain basement
+    private static final String BARGAIN_PRICE_FILE = "bargainPrice.txt";
+
+    private static double bargainPrice;                     //price of all records in the bargain basement
     private static final double CONSIGNORS_CUT = 0.4;       //consignor gets 40% of sale price
 
-    private static final int DAYS_BEFORE_BARAGIN = 30;      //how many days before a record must be moved to basement
+    private static final int DAYS_BEFORE_BARGAIN = 30;      //how many days before a record must be moved to basement
     private static final int DAYS_BEFORE_DONATE = 365;      //how many days before a record must be donated to charity
 
     public static double getBargainPrice() {
@@ -18,11 +21,13 @@ public class Controller {
     public static void setBargainPrice(double price) {
         bargainPrice = price;
         db.updateBargainPrice();
+        writeBargainPriceToFile();
     }
 
     static DatabaseModel db;
 
     public static void main(String[] args) {
+        readBargainPriceFromFile();
 
         AddShutdownHook closeDBConnection = new AddShutdownHook();
         closeDBConnection.attachShutdownHook();
@@ -44,6 +49,39 @@ public class Controller {
         }
 
         new View(controller).launchUI();
+    }
+
+    private static void writeBargainPriceToFile() {
+        String filename = BARGAIN_PRICE_FILE;
+
+        String bargainPrice = Double.toString(getBargainPrice());
+
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+
+            writer.write(bargainPrice);
+            writer.close();
+        } catch (IOException ioe) {
+            View.messageBox("Could not save bargain price to file", "Error");
+        }
+    }
+
+    private static void readBargainPriceFromFile() {
+        String filename = BARGAIN_PRICE_FILE;
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(filename));
+
+            String line = reader.readLine();
+
+            bargainPrice = Double.parseDouble(line);
+        } catch (FileNotFoundException fnf) {
+            View.messageBox("File not found: " + filename, "Error");
+            bargainPrice = 1.00;
+        } catch (IOException ioe) {
+            View.messageBox("Could not load bargain price from file", "Error");
+            bargainPrice = 1.00;
+        }
     }
 
     public String requestAddRecord(Record record) {
@@ -86,9 +124,9 @@ public class Controller {
         }
     }
 
-    public String requestDeleteRecord(int recordID) {
+    public String requestDeleteRecord(String fromTable, int recordID) {
 
-        boolean success = db.deleteRecord(recordID);
+        boolean success = db.deleteRecord(fromTable, recordID);
         if (success) {
             return null;
         } else {
@@ -107,9 +145,9 @@ public class Controller {
         }
     }
 
-    public String requestEditRecord(Record newData) {
+    public String requestEditRecord(String fromTable, Record newData) {
 
-        boolean success = db.editRecord(newData);
+        boolean success = db.editRecord(fromTable, newData);
         if (success) {
             return null;
         } else {
@@ -148,11 +186,18 @@ public class Controller {
     }
 
     public ArrayList<Record> requestRecordsForBargain() {
-        return db.getRecordsForBargain(DAYS_BEFORE_BARAGIN);
+        return db.getRecordsForBargain(DAYS_BEFORE_BARGAIN);
     }
 
     public ArrayList<Record> requestRecordsForDonation() {
         return db.getRecordsForDonation(DAYS_BEFORE_DONATE);
+    }
+
+    public String moveToBargainBasement(int recordID) {
+        String error = requestAddToBargainBasement(recordID);
+        if (error != null) return error;
+
+        return requestDeleteRecord(DatabaseModel.RECORDS_TABLE, recordID);
     }
 
     /**
@@ -165,7 +210,7 @@ public class Controller {
      * - update consignor with new amount owed
      *
      */
-    public String sellRecord(int recordID) {
+    public String sellRecord(String fromTable, int recordID) {
         //get record data
         Record record = db.getRecordData(recordID);
         if (record == null) return "Record not found";                  //return error message if record not fetched
@@ -189,7 +234,7 @@ public class Controller {
         if (addToSalesMsg != null) return addToSalesMsg;                //return error message if not null
 
         //delete from available records view
-        String deleteRecordMsg = requestDeleteRecord(recordID);
+        String deleteRecordMsg = requestDeleteRecord(fromTable, recordID);
         if (deleteRecordMsg != null) return deleteRecordMsg;            //return error message if not null
 
 
@@ -303,7 +348,7 @@ public class Controller {
 
             //list records to be moved to bargain basement
             if (!bargainRecords.isEmpty()) {
-                message += "\nThe following records have been in stock for over " + DAYS_BEFORE_BARAGIN + " days:\n";
+                message += "\nThe following records have been in stock for over " + DAYS_BEFORE_BARGAIN + " days:\n";
                 for (Record record : bargainRecords) {
                     message += "\n" + record.toString();
                 }

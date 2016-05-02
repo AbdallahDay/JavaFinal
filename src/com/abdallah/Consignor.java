@@ -85,7 +85,7 @@ public class Consignor {
                 + ", Name: " + this.consignorName
                 + ", Phone: " + this.phone
                 + ", Email: " + this.email
-                + ", Amount Owed: " + this.amountOwed
-                + ", Total Paid: " + this.totalPaid;
+                + ", Amount Owed: " + String.format("$%.2f", this.amountOwed)
+                + ", Total Paid: " + String.format("$%.2f", this.totalPaid);
     }
 }

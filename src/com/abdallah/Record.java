@@ -77,7 +77,7 @@ public class Record {
         return "ID: " + idString
                 + "Title: " + this.title
                 + ", Artist: " + this.artist
-                + ", Price: " + this.price
+                + ", Price: " + String.format("$%.2f", this.price)
                 + ", Consignor ID: " + this.consignorID
                 + ", Date Consigned: " + this.dateConsigned;
     }

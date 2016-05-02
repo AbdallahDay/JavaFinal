@@ -54,12 +54,14 @@ public class AddConsignorDialog extends JDialog {
             String name = nameTextField.getText();
             String phone = phoneTextField.getText();
             String email = emailTextField.getText();
-            double amoountPaid = 0f;
             double amountOwed = 0f;
+            double amountPaid = 0f;
 
-            Consignor consignor = new Consignor(name, phone, email, amountOwed, amoountPaid);
+            Consignor consignor = new Consignor(name, phone, email, amountOwed, amountPaid);
 
             myView.addConsignor(consignor);
+
+            myView.updateUI();
 
             dispose();
         }
@@ -74,7 +76,9 @@ public class AddConsignorDialog extends JDialog {
         return
                 Validator.isPresent(nameTextField, "Name") &&
                 Validator.isPresent(phoneTextField, "Phone") &&
+                Validator.isInteger(phoneTextField, "Phone") &&
+                Validator.isCorrectLength(phoneTextField, 10, "Phone") &&
                 Validator.isPresent(emailTextField, "Email") &&
-                Validator.isInteger(phoneTextField, "Phone");
+                Validator.isValidEmailAddress(emailTextField);
     }
 }

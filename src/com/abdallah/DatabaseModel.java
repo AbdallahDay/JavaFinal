@@ -452,7 +452,9 @@ public class DatabaseModel {
 
     public boolean addToSales(int recordID, Date dateSold) {
         //make sure record exists
-        if (getRecordData(recordID) == null) return false;
+        Record record = getRecordData(recordID);
+
+        if (record == null) return false;
 
         //SQL query for moving a record from records table to sales table
         String addSaleSQLps =
@@ -464,8 +466,7 @@ public class DatabaseModel {
                         DATE_CONSIGNED + ", " +
                         PRICE + ", " +
                         DATE_SOLD +
-                        ") VALUES ((SELECT * FROM " + AVAILABLE_RECORDS_VIEW +
-                        " WHERE " + RECORD_ID + "=?), ?)";
+                        ") VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try {
             //prepare statement
@@ -474,7 +475,12 @@ public class DatabaseModel {
 
             //insert data
             psAddSale.setInt(1, recordID);
-            psAddSale.setDate(2, dateSold);
+            psAddSale.setString(2, record.getTitle());
+            psAddSale.setString(3, record.getArtist());
+            psAddSale.setInt(4, record.getConsignorID());
+            psAddSale.setDate(5, record.getDateConsigned());
+            psAddSale.setDouble(6, record.getPrice());
+            psAddSale.setDate(7, dateSold);
 
             psAddSale.execute();
         } catch (SQLException se) {
@@ -490,7 +496,9 @@ public class DatabaseModel {
 
     public boolean addToBargainBasement(int recordID) {
         //make sure record exists
-        if (getRecordData(recordID) == null) return false;
+        Record record = getRecordData(recordID);
+
+        if (record == null) return false;
 
         //SQL query for moving a record from records table to bargain basement table
         String addToBargainBasementSQLps =
@@ -501,14 +509,7 @@ public class DatabaseModel {
                         CONSIGNOR_ID + ", " +
                         DATE_CONSIGNED + ", " +
                         PRICE +
-                        ") VALUES ((SELECT " +
-                        RECORD_ID + ", " +
-                        TITLE + ", " +
-                        ARTIST + ", " +
-                        CONSIGNOR_ID + ", " +
-                        DATE_CONSIGNED +
-                        " FROM " + RECORDS_TABLE +
-                        " WHERE " + RECORD_ID + "=?), ?)";
+                        ") VALUES (?, ?, ?, ?, ?, ?)";
 
         try {
             //prepare statement
@@ -517,7 +518,11 @@ public class DatabaseModel {
 
             //insert data
             psAddToBargainBasement.setInt(1, recordID);
-            psAddToBargainBasement.setDouble(2, Controller.getBargainPrice());   //set price as bargain price (currently $1)
+            psAddToBargainBasement.setString(2, record.getTitle());
+            psAddToBargainBasement.setString(3, record.getArtist());
+            psAddToBargainBasement.setInt(4, record.getConsignorID());
+            psAddToBargainBasement.setDate(5, record.getDateConsigned());
+            psAddToBargainBasement.setDouble(6, Controller.getBargainPrice());   //set price as bargain price (currently $1)
 
             psAddToBargainBasement.execute();
         } catch (SQLException se) {
@@ -531,13 +536,13 @@ public class DatabaseModel {
         return true;
     }
 
-    public boolean deleteRecord(int recordID) {
+    public boolean deleteRecord(String fromTable, int recordID) {
         //make sure record exists
         if (getRecordData(recordID) == null) return false;
 
         // SQL query for deleting record from DB
         String deleteRecordSQLps =
-                "DELETE FROM " + AVAILABLE_RECORDS_VIEW +
+                "DELETE FROM " + fromTable +
                         " WHERE " + RECORD_ID + "=?";
 
         try {
@@ -588,7 +593,7 @@ public class DatabaseModel {
         return true;
     }
 
-    public boolean editRecord(Record newData) {
+    public boolean editRecord(String fromTable, Record newData) {
         //takes Record object with new record data
         int recordID = newData.getRecordID();
 
@@ -597,7 +602,7 @@ public class DatabaseModel {
 
         // SQL query for updating record
         String updateRecordSQLps =
-                "UPDATE " + AVAILABLE_RECORDS_VIEW + " SET " +
+                "UPDATE " + fromTable + " SET " +
                         TITLE + "=?," +
                         ARTIST + "=?," +
                         CONSIGNOR_ID + "=?," +
@@ -618,7 +623,6 @@ public class DatabaseModel {
 
             psUpdateRecord.execute();
         } catch (SQLException se) {
-            //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to update record data.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
 
@@ -659,7 +663,6 @@ public class DatabaseModel {
 
             psUpdateConsignor.execute();
         } catch (SQLException se) {
-            //TODO: display error message
             System.err.println("Error preparing statement or executing prepared statement to update consignor data.");
             System.err.println(se.getErrorCode() + " " + se.getMessage());
 
@@ -928,14 +931,7 @@ public class DatabaseModel {
 
         //get record data from records table where the age of the record exceeds a given number of days
         String getRecords =
-                "SELECT " +
-                        RECORD_ID + ", " +
-                        TITLE + ", " +
-                        ARTIST + ", " +
-                        CONSIGNOR_ID + ", " +
-                        DATE_CONSIGNED + ", " +
-                        PRICE +
-                        " FROM " + RECORDS_TABLE +
+                "SELECT * FROM " + RECORDS_TABLE +
                         " WHERE {fn TIMESTAMPDIFF(SQL_TSI_DAY, " +
                         DATE_CONSIGNED + ", CURRENT_DATE)} <= " + numberOfDays;
         //TODO: getting exception: 30000 Column 'DAY' is either not in any table in the FROM list
@@ -945,7 +941,6 @@ public class DatabaseModel {
         try {
             rs = statement.executeQuery(getRecords);
         } catch (SQLException se) {
-            //TODO: display error message
             System.err.println("Error fetching records from records table");
             System.out.println(se.getErrorCode() + " " + se.getMessage());
 
@@ -992,14 +987,7 @@ public class DatabaseModel {
 
         //get record data from available records view where the age of the record exceeds a given number of days
         String getRecords =
-                "SELECT " +
-                        RECORD_ID + ", " +
-                        TITLE + ", " +
-                        ARTIST + ", " +
-                        CONSIGNOR_ID + ", " +
-                        DATE_CONSIGNED + ", " +
-                        PRICE +
-                        " FROM " + AVAILABLE_RECORDS_VIEW +
+                "SELECT * FROM " + AVAILABLE_RECORDS_VIEW +
                         " WHERE {fn TIMESTAMPDIFF(SQL_TSI_DAY, " +
                         DATE_CONSIGNED + ", CURRENT_DATE)} <= " + numberOfDays;
         try {
@@ -1055,14 +1043,18 @@ public class DatabaseModel {
 
             rs = psFindRecords.executeQuery();
 
-            int id = rs.getInt(RECORD_ID);
-            String title = rs.getString(TITLE);
-            String artist = rs.getString(ARTIST);
-            int consignorID = rs.getInt(CONSIGNOR_ID);
-            Date dateConsigned = rs.getDate(DATE_CONSIGNED);
-            double price = rs.getDouble(PRICE);
+            if (rs.next()) {
+                int id = rs.getInt(RECORD_ID);
+                String title = rs.getString(TITLE);
+                String artist = rs.getString(ARTIST);
+                int consignorID = rs.getInt(CONSIGNOR_ID);
+                Date dateConsigned = rs.getDate(DATE_CONSIGNED);
+                double price = rs.getDouble(PRICE);
 
-            return new Record(id, title, artist, consignorID, dateConsigned, price);
+                return new Record(id, title, artist, consignorID, dateConsigned, price);
+            } else {
+                throw new SQLException();
+            }
 
         } catch (SQLException se) {
             //TODO: display error message
@@ -1088,14 +1080,18 @@ public class DatabaseModel {
 
             rs = psFindConsignors.executeQuery();
 
-            int id = rs.getInt(CONSIGNOR_ID);
-            String name = rs.getString(CONSIGNOR_NAME);
-            String phone = rs.getString(PHONE);
-            String email = rs.getString(EMAIL);
-            double amountOwed = rs.getDouble(AMOUNT_OWED);
-            double totalPaid = rs.getDouble(TOTAL_PAID);
+            if (rs.next()) {
+                int id = rs.getInt(CONSIGNOR_ID);
+                String name = rs.getString(CONSIGNOR_NAME);
+                String phone = rs.getString(PHONE);
+                String email = rs.getString(EMAIL);
+                double amountOwed = rs.getDouble(AMOUNT_OWED);
+                double totalPaid = rs.getDouble(TOTAL_PAID);
 
-            return new Consignor(id, name, phone, email, amountOwed, totalPaid);
+                return new Consignor(id, name, phone, email, amountOwed, totalPaid);
+            } else {
+                throw new SQLException();
+            }
 
         } catch (SQLException se) {
             //TODO: display error message

@@ -3,17 +3,24 @@ package com.abdallah;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class SetBargainPriceDialog extends JDialog {
+public class PayConsignorDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField priceTextField;
+    private JTextField amountTextField;
+    private JLabel amountOwedLabel;
 
     private View myView;
+    private Consignor myConsignor;
 
-    public SetBargainPriceDialog(View view) {
+    public PayConsignorDialog(Consignor consignor, View view) {
 
         myView = view;
+        myConsignor = consignor;
+
+        double amountOwed = myConsignor.getAmountOwed();
+
+        amountOwedLabel.setText("You owe this consignor " + String.format("$%.2f", amountOwed));
 
         setContentPane(contentPane);
         setModal(true);
@@ -49,7 +56,11 @@ public class SetBargainPriceDialog extends JDialog {
 
     private void onOK() {
         if (isValidInput()) {
-            Controller.setBargainPrice(Double.parseDouble(priceTextField.getText()));
+
+            double amount = Double.parseDouble(amountTextField.getText());
+            int consignorID = myConsignor.getConsignorID();
+
+            myView.payConsignor(consignorID, amount);
 
             myView.updateUI();
 
@@ -64,7 +75,8 @@ public class SetBargainPriceDialog extends JDialog {
 
     boolean isValidInput() {
         return
-                Validator.isPresent(priceTextField, "Price") &&
-                Validator.isNumeric(priceTextField, "Price");
+                Validator.isPresent(amountTextField, "Amount") &&
+                Validator.isNumeric(amountTextField, "Amount") &&
+                Validator.numberIsWithinRange(amountTextField, "Amount", 0, myConsignor.getAmountOwed());
     }
 }

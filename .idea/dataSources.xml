@@ -6,7 +6,6 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:$PROJECT_DIR$/DB;create=true</jdbc-url>
-      <libraries />
     </data-source>
   </component>
 </project>

@@ -13,7 +13,6 @@ public class View {
     private JScrollPane recordsScrollPane;
     private JScrollPane bargainBasementScrollPane;
     private JPanel centerPanel;
-    private JPanel bottomPanel;
     private JButton moveToBasementButton;
     private JList recordsList;
     private JList bargainBasementList;
@@ -29,17 +28,19 @@ public class View {
     private JPanel salesTab;
     private JList salesList;
     private JButton bargainPriceButton;
+    private JPanel bargainBasementTab;
+    private JButton editBargainRecord;
+    private JButton deleteBaragainRecord;
+    private JButton sellBargainRecord;
 
     Controller myController;
     JFrame mainFrame = null;
 
-    double bargainPrice;
-
-    public View() {}
+    private View myView;
 
     public View(Controller controller) {
+        myView = this;
         myController = controller;
-        bargainPrice = Controller.getBargainPrice();
 
         controller.getOldRecords();
 
@@ -48,23 +49,19 @@ public class View {
 
         /** Records Tab **/
 
-        //Change bargain price
-        bargainPriceButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                SetBargainPriceDialog dialog = new SetBargainPriceDialog();
-                dialog.setTitle("Set Bargain Price");
-                dialog.setVisible(true);
-            }
-        });
-
         //Add record
         addRecordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                AddRecordDialog dialog = new AddRecordDialog(getAllConsignors(), new View());
-                dialog.setTitle("Add Record");
-                dialog.setVisible(true);
+                ArrayList<Consignor> allConsignors = getAllConsignors();
+
+                if (allConsignors.isEmpty()) {
+                    View.messageBox("Could not load a list of consignors, adding a record requires a consignor.", "Error");
+                } else {
+                    AddRecordDialog dialog = new AddRecordDialog(allConsignors, myView);
+                    dialog.setTitle("Add Record");
+                    dialog.setVisible(true);
+                }
             }
         });
 
@@ -75,7 +72,7 @@ public class View {
                 if (!recordsList.isSelectionEmpty()) {
                     Record record = (Record)recordsList.getSelectedValue();
 
-                    editRecordDialog dialog = new editRecordDialog(record, new View());
+                    EditRecordDialog dialog = new EditRecordDialog(record, myView);
                     dialog.setTitle("Edit Record");
                     dialog.setVisible(true);
                 }
@@ -88,12 +85,16 @@ public class View {
             public void actionPerformed(ActionEvent e) {
                 if (!recordsList.isSelectionEmpty()) {
                     Record record = (Record) recordsList.getSelectedValue();
-                    //TODO: open delete record dialog
+                    int recordID = record.getRecordID();
+
+                    deleteRecord(DatabaseModel.RECORDS_TABLE, recordID);
+
+                    updateUI();
                 }
             }
         });
 
-        //Sell record
+        //Sell record from records table
         sellRecordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -101,7 +102,9 @@ public class View {
                     Record record = (Record) recordsList.getSelectedValue();
                     int recordID = record.getRecordID();
 
-                    sellRecord(recordID);
+                    sellRecord(DatabaseModel.RECORDS_TABLE, recordID);
+
+                    updateUI();
                 }
             }
         });
@@ -115,6 +118,64 @@ public class View {
                     int recordID = record.getRecordID();
 
                     moveToBargainBasement(recordID);
+
+                    updateUI();
+                }
+            }
+        });
+
+        /** Bargain Basement Tab **/
+
+        //Change bargain price
+        bargainPriceButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SetBargainPriceDialog dialog = new SetBargainPriceDialog(new View(myController));
+                dialog.setTitle("Set Bargain Price");
+                dialog.setVisible(true);
+            }
+        });
+
+        //Edit bargain basement record
+        editBargainRecord.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!bargainBasementList.isSelectionEmpty()) {
+                    Record record = (Record)bargainBasementList.getSelectedValue();
+
+                    EditBargainRecordDialog dialog = new EditBargainRecordDialog(record, myView);
+                    dialog.setTitle("Edit Record");
+                    dialog.setVisible(true);
+                }
+            }
+        });
+
+        //Delete bargain basement record
+        deleteBaragainRecord.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!bargainBasementList.isSelectionEmpty()) {
+                    Record record = (Record) bargainBasementList.getSelectedValue();
+                    int recordID = record.getRecordID();
+
+                    deleteRecord(DatabaseModel.BARGAIN_BSMT_TABLE, recordID);
+
+                    updateUI();
+                }
+            }
+        });
+
+        //Sell bargain basement record
+        sellBargainRecord.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!bargainBasementList.isSelectionEmpty()) {
+                    Record record = (Record) bargainBasementList.getSelectedValue();
+                    int recordID = record.getRecordID();
+
+                    sellRecord(DatabaseModel.BARGAIN_BSMT_TABLE, recordID);
+
+                    updateUI();
                 }
             }
         });
@@ -125,7 +186,9 @@ public class View {
         addConsignorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: open add consignor dialog
+                AddConsignorDialog dialog = new AddConsignorDialog(myView);
+                dialog.setTitle("Add Consignor");
+                dialog.setVisible(true);
             }
         });
 
@@ -136,7 +199,9 @@ public class View {
                 if (!consignorsList.isSelectionEmpty()) {
                     Consignor consignor = (Consignor) consignorsList.getSelectedValue();
 
-                    //TODO: open edit consignor dialog
+                    EditConsignorDialog dialog = new EditConsignorDialog(consignor, myView);
+                    dialog.setTitle("Edit Consignor");
+                    dialog.setVisible(true);
                 }
             }
         });
@@ -147,8 +212,11 @@ public class View {
             public void actionPerformed(ActionEvent e) {
                 if (!consignorsList.isSelectionEmpty()) {
                     Consignor consignor = (Consignor) consignorsList.getSelectedValue();
+                    int consignorID = consignor.getConsignorID();
 
-                    //TODO: open delete consignor dialog
+                    deleteConsignor(consignorID);
+
+                    updateUI();
                 }
             }
         });
@@ -160,7 +228,13 @@ public class View {
                 if (!consignorsList.isSelectionEmpty()) {
                     Consignor consignor = (Consignor) consignorsList.getSelectedValue();
 
-                    //TODO: open pay consignor dialog
+                    if (consignor.getAmountOwed() == 0f) {
+                        messageBox("You do not owe this consignor any money!", "No payment required");
+                    } else {
+                        PayConsignorDialog dialog = new PayConsignorDialog(consignor, myView);
+                        dialog.setTitle("Pay Consignor");
+                        dialog.setVisible(true);
+                    }
                 }
             }
         });
@@ -189,8 +263,10 @@ public class View {
     }
 
     private void setBargainPriceButtonText() {
-        String p = String.format("$%.2f", bargainPrice);
+        String p = String.format("$%.2f", Controller.getBargainPrice());
         bargainPriceButton.setText(p);
+        // BUG: for some reason, the button text doesn't update immediately,
+        // will update the next time UpdateUI() is called, though
     }
 
     private void updateJLists() {
@@ -249,7 +325,7 @@ public class View {
     }
 
     private void moveToBargainBasement(int recordID) {
-        String error = myController.requestAddToBargainBasement(recordID);
+        String error = myController.moveToBargainBasement(recordID);
 
         if (error != null) {
             //error occurred
@@ -259,8 +335,8 @@ public class View {
         }
     }
 
-    public void sellRecord(int recordID) {
-        String error = myController.sellRecord(recordID);
+    public void sellRecord(String fromTable, int recordID) {
+        String error = myController.sellRecord(fromTable, recordID);
 
         if (error != null) {
             //error occurred
@@ -270,8 +346,8 @@ public class View {
         }
     }
 
-    private void deleteRecord(int recordID) {
-        String error = myController.requestDeleteRecord(recordID);
+    private void deleteRecord(String fromTable, int recordID) {
+        String error = myController.requestDeleteRecord(fromTable, recordID);
 
         if (error != null) {
             //error occurred
@@ -292,8 +368,8 @@ public class View {
         }
     }
 
-    public void editRecord(Record newData) {
-        String error = myController.requestEditRecord(newData);
+    public void editRecord(String fromTable, Record newData) {
+        String error = myController.requestEditRecord(fromTable, newData);
 
         if (error != null) {
             //error occurred
